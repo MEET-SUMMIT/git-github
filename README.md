@@ -1,4 +1,3 @@
-# git-github
-FOR TUTORIAL PURPOSE
-THIS IS MY FIRST COMMENT
-FROM TODAY I WOULD BE DWELLING IN OSS
+# some famous program
+1. **tower of hanoi**
+2. **check sorted or not**
