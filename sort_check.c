@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int is_sorted(int A[],int n)
 {
 if (n==1)
@@ -11,7 +12,19 @@ else
 
 }
 int main()
-{int A[10]={2,2,2,2,2,2,2,2,2,2};
-printf("%d",is_sorted(A,10));
+{int *a,n,i=0;
+/*enter the value of n greater than 1*/
+printf("enter the number of data items:");
+scanf("%d",&n);
+if(n<2)
+{printf("invalid input");
+return 0;}
+
+printf("enter %d elements:\n",n);
+a=(int*)malloc(n*4);
+for(;i<n;i++)
+scanf("%d",&a[i]);
+is_sorted(a,n)?printf("\nthe array is sorted"):printf("\nthe array is not sorted");
+free(a);
 return 0;
 }
