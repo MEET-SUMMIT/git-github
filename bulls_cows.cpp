@@ -1,24 +1,10 @@
-#include<iostream>
-#include<iomanip>
-#include<fstream>
-#include<sstream>
-#include<cmath>
-#include<cstdlib>
-#include<string>
-#include<list>
-#include <forward_list>
-#include<vector>
-#include<unordered_map>
-#include<algorithm>
-#include <array>
-#include <regex>
-#include<random>
-#include<stdexcept>
-#include<exception>
+#include ".\std_lib_facilities.h"
 using namespace std;
 int main(){
     int b=0,i=0,c=0,j,k,seed;
-    cout<<"enter a number:";
+    char wanna_play='Y';
+    while(wanna_play=='Y'||wanna_play=='y')
+    {cout<<"enter a number:";
     cin>>seed;
     vector <int> v(4);
     srand(seed);
@@ -35,7 +21,6 @@ int main(){
      k++;
      }
     }
-   cout<<v[0]<<v[1]<<v[2]<<v[3];
   vector<int> guess(4);
     cout<<"guess the 4 digit number\n";
     while (b!=4)
@@ -62,10 +47,9 @@ int main(){
     if(b!=4)
         cout<<"guess again\n";
      }
-     char wanna_play;
+     
      cout<<"if want to play again enter Y else N :";
      cin>>wanna_play;
-     if(wanna_play=='Y'||wanna_play=='y')
-     main();
+     }
     return 0;
     }
